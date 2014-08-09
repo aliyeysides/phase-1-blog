@@ -38,6 +38,7 @@ ul {
 	left: 100px;
 	top: 30px;
 	min-width: 1000px;
+	max-height: 520px;
 	margin-right: 125px;
 	padding-right: 80px;
 	padding-top: 20px;
