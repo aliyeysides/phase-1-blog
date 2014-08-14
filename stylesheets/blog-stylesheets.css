@@ -5,6 +5,10 @@ body {
 	height: 100%;
 }
 
+#intro {
+	font-family: 'Lobster', cursive;
+}
+
 .icons {
 	margin-left: auto;
 	margin-right: auto;
