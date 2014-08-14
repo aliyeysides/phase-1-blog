@@ -26,7 +26,7 @@ p {
 }
 
 #about_pic {
-	position: absolute;
+	position: relative;
 	float: left;
 	opacity: 1;
 }
@@ -115,7 +115,6 @@ ul {
 	padding-left: 80px;
 	padding-bottom: 20px;
 	opacity: 0.6;	
-	clear: both;
 }
 
 /*background-color: #d1d2d3;
