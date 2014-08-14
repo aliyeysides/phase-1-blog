@@ -27,8 +27,8 @@ p {
 
 #abot_pic {
 	position: relative;
-	top: 0;
-	left: 0;
+	top: 50px;
+	left: 20px;
 	opacity: 1;
 }
 
