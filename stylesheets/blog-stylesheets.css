@@ -45,39 +45,11 @@ ul {
 }
 
 .left-nav-2 {
-	text-decoration: none;
-	background-color: #ffa600;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	position: fixed;
-	width: 70px;
-	height: auto;
-	margin-left: -10px;
-	margin-top: 30px;
-	float: left;
-	display: block;
-	opacity: 0.6;
-	clear: left;
+	
 }
 
 .left-nav-3 {
-	text-decoration: none;
-	background-color: #ffa600;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	position: fixed;
-	width: 70px;
-	height: auto;
-	margin-left: -10px;
-	margin-top: 30px;
-	float: left;
-	display: block;
-	opacity: 0.6;
-	clear: left;
+	
 }
 
 .content {
