@@ -9,8 +9,8 @@ body {
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	color: #FF981B;
+	text-shadow: -1px 0 #E8450C, 0 1px #E8450C, 1px 0 #E8450C, 0 -1px #E8450C;
 	font-size: 70px;
-	border: #E8450C;
 }
 
 .icons {
