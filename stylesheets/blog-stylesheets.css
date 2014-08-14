@@ -26,9 +26,10 @@ p {
 }
 
 #abot_pic {
-	positon: absolute;
+	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 1;
 }
 
 #intro {
