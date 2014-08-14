@@ -25,6 +25,12 @@ p {
 	color: white;
 }
 
+#abot_pic {
+	positon: absolute;
+	top: 0;
+	left: 0;
+}
+
 #intro {
 	font-family: 'Lobster', cursive;
 	text-align: center;
