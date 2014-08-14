@@ -45,6 +45,7 @@ ul {
 }
 
 .left-nav-2 {
+	display: block;
 	float: left;
 	clear: left;
 }
