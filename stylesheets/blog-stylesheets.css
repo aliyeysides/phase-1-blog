@@ -21,6 +21,10 @@ body {
 	padding-bottom: 15px;
 }
 
+p {
+	color: white;
+}
+
 #intro {
 	font-family: 'Lobster', cursive;
 	text-align: center;
