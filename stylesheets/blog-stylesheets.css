@@ -5,13 +5,16 @@ body {
 
 #ali {
 	position: relative;
-	top: 60px;
+	top: 50px;
+	left: 20px;
 	background-color: black;
 	padding-left: 20px;
 	padding-right: 25px;
 }
 
 #yeysides {
+	position: relative;
+	bottom: 30px;
 	background-color: black;
 	padding-left: 25px;
 	padding-right: 25px;
