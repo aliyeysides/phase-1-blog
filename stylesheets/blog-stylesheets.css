@@ -72,6 +72,7 @@ ul {
 #left_blog {
 	display: inline-block;
 	float: left;
+	width: 50%;
 }
 
 .left-nav {
