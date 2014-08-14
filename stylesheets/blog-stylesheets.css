@@ -45,7 +45,8 @@ ul {
 }
 
 .left-nav-2 {
-	
+	float: left;
+	clear: left;
 }
 
 .left-nav-3 {
