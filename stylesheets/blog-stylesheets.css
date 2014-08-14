@@ -59,7 +59,7 @@ ul {
 	float: left;
 	display: block;
 	opacity: 0.6;
-	clear: right;
+	clear: left;
 }
 
 .left-nav-3 {
