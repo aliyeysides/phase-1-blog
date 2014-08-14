@@ -8,8 +8,9 @@ body {
 #intro {
 	font-family: 'Lobster', cursive;
 	text-align: center;
-	color: #FF620D;
-	font-size: 100px;
+	color: #FF981B;
+	font-size: 70px;
+	border: #E8450C;
 }
 
 .icons {
