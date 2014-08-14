@@ -109,6 +109,7 @@ ul {
 	left: 100px;
 	top: 30px;
 	width: auto;
+	min-height: 200px;
 	/*min-width: 1000px;*/
 	margin-right: 125px;
 	margin-bottom: auto;
