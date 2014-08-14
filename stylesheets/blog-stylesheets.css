@@ -51,7 +51,9 @@ ul {
 }
 
 .left-nav-3 {
-	
+	display: block;
+	float: left;
+	clear: left;
 }
 
 .content {
