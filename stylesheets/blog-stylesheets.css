@@ -26,8 +26,10 @@ p {
 }
 
 #about_pic {
-	position: relative;
-	float: left;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: inline-block;
 	opacity: 1;
 }
 
