@@ -41,11 +41,10 @@ ul {
 	margin-top: 30px;
 	float: left;
 	display: block;
-	opacity: 0.6;
 }
 
 #left-nav-2 {
-	position: absolute;
+	position: relative;
 	display: block;
 	float: left;
 	clear: left;
@@ -57,7 +56,7 @@ ul {
 }
 
 #left-nav-3 {
-	position: absolute;
+	position: relative;
 	display: block;
 	float: left;
 	clear: left;
