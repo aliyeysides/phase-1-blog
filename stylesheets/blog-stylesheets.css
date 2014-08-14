@@ -69,10 +69,10 @@ ul {
 	color: white;
 }
 
-#left_blog {
-	display: inline-block;
-	float: left;
-	width: 50%;
+li {
+	white-space: pre-line;
+}
+
 }
 
 .left-nav {
