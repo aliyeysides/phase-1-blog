@@ -5,11 +5,14 @@ body {
 
 #ali {
 	background-color: black;
-
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #yeysides {
 	background-color: black;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #intro {
