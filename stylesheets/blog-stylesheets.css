@@ -48,12 +48,16 @@ ul {
 	display: block;
 	float: left;
 	clear: left;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .left-nav-3 {
 	display: block;
 	float: left;
 	clear: left;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .content {
