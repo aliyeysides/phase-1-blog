@@ -9,9 +9,9 @@ body {
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	color: #4E535E;
-	text-shadow: -1px 0 #E8450C, 0 1px #E8450C, 1px 0 #E8450C, 0 -1px #E8450C;
+	/*text-shadow: -1px 0 #E8450C, 0 1px #E8450C, 1px 0 #E8450C, 0 -1px #E8450C;*/
 	font-size: 60px;
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .icons {
