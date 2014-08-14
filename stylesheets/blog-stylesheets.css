@@ -31,9 +31,10 @@ ul {
 	text-decoration: none;
 	padding-right: 10px;
 	padding-top: 10px;
-	position: relative fixed;
+	position: relative;
 	width: 70px;
 	height: auto;
+	margin-top: 10px;
 	margin-left: -10px;
 	margin-top: auto;
 	float: left;
@@ -41,7 +42,7 @@ ul {
 }
 
 #left-nav-2 {
-	position: relative fixed;
+	position: relative;
 	display: block;
 	float: left;
 	clear: left;
@@ -52,7 +53,7 @@ ul {
 }
 
 #left-nav-3 {
-	position: relative fixed;
+	position: relative;
 	display: block;
 	float: left;
 	clear: left;
