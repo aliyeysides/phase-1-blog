@@ -11,6 +11,7 @@ body {
 	color: #FF981B;
 	text-shadow: -1px 0 #E8450C, 0 1px #E8450C, 1px 0 #E8450C, 0 -1px #E8450C;
 	font-size: 70px;
+	opacity: 0.7;
 }
 
 .icons {
