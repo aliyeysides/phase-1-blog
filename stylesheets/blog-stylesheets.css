@@ -50,6 +50,8 @@ ul {
 	clear: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	margin-top: 60px;
+
 }
 
 .left-nav-3 {
@@ -58,6 +60,7 @@ ul {
 	clear: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	margin-top: 90px;
 }
 
 .content {
