@@ -44,7 +44,7 @@ ul {
 	opacity: 0.6;
 }
 
-.left-nav-2 {
+#left-nav-2 {
 	position: absolute;
 	display: block;
 	float: left;
@@ -55,7 +55,7 @@ ul {
 
 }
 
-.left-nav-3 {
+#left-nav-3 {
 	position: absolute;
 	display: block;
 	float: left;
