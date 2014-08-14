@@ -27,8 +27,8 @@ p {
 
 #about_pic {
 	position: absolute;
-	margin-right: 5px;
-	margin-bottom: 5px;
+	top: 20px;
+	left: 20px;
 	display: inline-block;
 	float: left;
 	opacity: 1;
