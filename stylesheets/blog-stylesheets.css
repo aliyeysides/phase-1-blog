@@ -22,7 +22,7 @@ a:hover {
 	background-color: black;
 	padding-left: 20px;
 	padding-right: 30px;
-	box-shadow: outset 0 0 30px 15px white;
+	/*box-shadow: outset 0 0 30px 15px white;*/
 }
 
 #yeysides {
@@ -32,7 +32,7 @@ a:hover {
 	padding-left: 25px;
 	padding-right: 30px;
 	padding-bottom: 15px;
-	box-shadow: outset 0 0 30px 15px white;
+	/*box-shadow: outset 0 0 30px 15px white;*/
 }
 
 p {
