@@ -50,10 +50,11 @@ p {
 	text-align: center;
 	max-width: 120px;
 	color: white;
-	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	/*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
 	font-size: 60px;
 	opacity: 1;
 	padding-left: 20px;
+	border-color: white;
 }
 
 .icons {
