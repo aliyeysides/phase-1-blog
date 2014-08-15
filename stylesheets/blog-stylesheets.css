@@ -1,6 +1,12 @@
 body {
 	background-image: url("https://raw.githubusercontent.com/aliyeysides/phase-0-unit-1/master/week-1/imgs/_DSC0096.jpg?token=3051125__eyJzY29wZSI6IlJhd0Jsb2I6YWxpeWV5c2lkZXMvcGhhc2UtMC11bml0LTEvbWFzdGVyL3dlZWstMS9pbWdzL19EU0MwMDk2LmpwZyIsImV4cGlyZXMiOjE0MDgyMjIyMzl9--db10eeb68e62a8de954d5444076d351e97d44c90");
 	background-size: 100%;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
 }
 
 #ali {
