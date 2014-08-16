@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+	<title>My Blog</title>
+	<div class="icons">
+		<a href="https://github.com/aliyeysides"><img src="/imgs/github_64.png"/></a>
+		<a href="http://www.quora.com/Ali-Yeysides-1"><img src="/imgs/quora_64.png"/></a>
+		<a href="https://plus.google.com/u/0/117458402151884611371/posts"><img src="/imgs/google-plus_64.png"/></a>
+		<a href="http://aliyeysides.github.io"><img src="https://secure.gravatar.com/avatar/4221b3afbf3f0d100a6bdd1455799b8a.png?r=PG&d=mm&s=98"/></a>
+		<a href="https://www.linkedin.com/nhome/?trk="><img src="/imgs/linkedin_64.png"/></a>
+		<a href="https://twitter.com/aliyeysides"><img src="/imgs/twitter_64.png"/></a>
+		<a href="https://www.facebook.com/ali.yeysides"><img src="/imgs/facebook_64.png"/></a>
+	</div>
+</head>
+
+<body>
+<div class="left-nav">
+	<ul>
+		<li><a href="#"><img src="http://icons.iconarchive.com/icons/michal-kowalkowski/metro-dating/64/How-About-We-icon.png"/></a></li>
+	</ul>
+</div>
+
+<div id="left-nav-2">
+	<ul>
+		<li><a href="#"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Web-RSS-Feed-Metro-icon.png"/></a></li>
+	</ul>
+</div>
+
+<div id="left-nav-3">
+	<ul>
+		<li><a href="#"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Apps-Steam-alt-Metro-icon.png"/></a></li>
+	</ul>
+</div>
+<div class="content">
+	<h1>How and When to use Relative, Absolute, and Fixed Positioning</h1>
+	<p>There tends to be a lot of confusion when first learning how to use CSS, and with good reason too. Positioning your elements the way you intended them can be a daunting task, but why should it be? I mean, isn't that the point of CSS, to make styling easier? We'll it is; it's just that over looking the basic positioning methods can be easy to do when you have many other properties and values to remember. But it's worth taking the time to study each method of positioning so we have full control over the way our elements interact with the browser and with each other. Today, I'm about to go over each positioning value and explain how to use them and when to use them.</p>
+	<strong><h2>Static</h2></strong>
+	<p><strong>Static</strong> positioning is the default value set to your elements if no other value is assigned. Any top, right, bottom, left attributes are completely ignored by this state. Now, you're smart, and you're asking yourself, "Why the hell would I ever set an element to Static?" Well that's an excellent question. The reason we'd knowingly apply the Static positioning attribute to an element would be to reset, or override, any other positioning that was applied to that said element by mistake, perhaps by a CSS selector we overlooked. Instead of having to rewrite our code to only apply that positioning to everything BUT this element, we can simply put a Static positioning attribute to it and viola!</p>
+	<strong><h2>Relative</h2></strong>
+	<p><strong>Relative</strong> positioning is an extremely useful tool. It allows us to set any top, right, bottom, left attribute to the element and move it around the container as we wish. Say for example, I set a div to top: 10px, That element will shift a distance of 10 pixels DOWN from the top of where it would normally be positioned in its static state. If I were to set the top; 0px and left: 0px, the element will then be moved to the top left of its relative location. This can be really useful in most cases when you want to move around an element in a free manner. Since we can also use negative top, right, bottom, left values, we can theoretically use relative positioning to place an element/block any where we wish, so you can image the possibilities.<br>
+	<br>
+	Another feature of the relative positioning is that it can be used on a parent element and serve as a reference point for any child elements that have absolute positioning applied to them. For example:</p> 
+	<div id="relative_test"><div id="absolute_test"></div></div>
+	<p>Above, I've went ahead and created two divs. The RED div is the parent div and the BLUE div is the child of the RED parent. The RED div has the relative positioning attribute while the BLUE has absolute. Now, since the child is absolute, it looks to the relative parent for reference when making positioning changes. So, when I gave the BLUE div a top 5px; and a left: 5px; it moved relative to it's parent. Get it? Any element that is a child of the relatively positioned element can be absolutely positioned within that block.</p>
+	<h2><strong>Absolute</strong></h2>
+	<p>When <strong>absolute</strong> positioning is applied to an element that has no parent, by default it assumes positioning relative to the entire html page. This is useful again because we can move it around anywhere we wish with the top, right, bottom, left attributes, however unlike relative positioning, absolute positioning removes itself from the flow of elements on the page. What this means is that other elements will act as if that absolute element is not there, and will change accordingly. So be careful when using this feature.</p>
+</div>
+</body>
+
+
+
+</html>
