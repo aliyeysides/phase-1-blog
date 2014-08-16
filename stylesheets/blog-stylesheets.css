@@ -84,10 +84,11 @@ ul {
 
 .left-nav a:hover {
 	position: absolute;
-	display: inline-block;
+	display: inline;
 	width: 140px;
 	height: 70px;
 	background-color: white;
+	clear: both;
 }
 
 
