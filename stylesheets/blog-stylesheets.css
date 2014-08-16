@@ -97,7 +97,7 @@ ul {
 	display: block;
 }
 
-.left-nav ul li a {
+.left-nav ul li a:hover {
 	box-shadow: inset 0 0 30px 15px white;
 }
 
