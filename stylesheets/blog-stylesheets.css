@@ -82,6 +82,11 @@ ul {
 	color: white;
 }
 
+.left-nav ul li a {
+	display: block;
+	width: 60px;
+}
+
 
 .left-nav {
 	text-decoration: none;
