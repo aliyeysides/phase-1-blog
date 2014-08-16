@@ -85,6 +85,7 @@ ul {
 .left-nav ul li a {
 	display: block;
 	width: 60px;
+	background-color: white;
 }
 
 
