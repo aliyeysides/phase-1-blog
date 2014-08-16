@@ -82,9 +82,10 @@ ul {
 	color: white;
 }
 
-.left-nav ul li a {
-	display: block;
-	width: 60px;
+.left-nav a:hover {
+	position: absolute;
+	width: 140px;
+	height: 70px;
 	background-color: white;
 }
 
