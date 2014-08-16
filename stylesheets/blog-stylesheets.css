@@ -83,6 +83,10 @@ ul {
 }
 
 .left-nav {
+	box-shadow: inset 0px 30px 0px 0px white;
+}
+
+.left-nav {
 	text-decoration: none;
 	padding-right: 10px;
 	padding-top: 10px;
