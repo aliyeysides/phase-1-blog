@@ -82,16 +82,6 @@ ul {
 	color: white;
 }
 
-.left-nav div {
-	position: absolute;
-	
-	width: 140px;
-	height: 60px;
-	background-color: white;
-	clear: both;
-}
-
-
 .left-nav {
 	text-decoration: none;
 	padding-right: 10px;
