@@ -74,18 +74,13 @@ p {
 	color: white;
 }
 
-ul {
+ul li {
 	text-decoration: none;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	color: white;
 }
-
-li {
-	color: white;
-}
-
 
 .left-nav {
 	text-decoration: none;
