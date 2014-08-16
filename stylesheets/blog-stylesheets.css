@@ -82,7 +82,7 @@ ul {
 	color: white;
 }
 
-.left-nav img:hover {
+.left-nav div {
 	position: absolute;
 	
 	width: 140px;
