@@ -103,6 +103,14 @@ ul {
 	display: block;
 }
 
+#left-nav-2:hover div.nav_text {
+	display: block;
+}
+
+#left-nav-3:hover div.nav_text {
+	display: block;
+}
+
 .nav_text {
 	background-color: white;
 	float: left;
@@ -127,7 +135,7 @@ ul {
 	top: 20px;
 	display: block;
 	float: left;
-	clear: left;
+	clear: both;
 	padding-right: 10px;
 	margin-top: auto;
 	margin-left: -10px;
