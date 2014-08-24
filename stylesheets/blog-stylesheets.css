@@ -110,7 +110,8 @@ ul {
 	height: 70px;
 	width: 100px;
 	position: absolute;
-	right: 70px;
+	left: 0px;
+	margin-left: 70px;
 }
 
 .nav_image {
