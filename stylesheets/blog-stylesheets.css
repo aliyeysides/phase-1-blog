@@ -107,6 +107,8 @@ ul {
 	background-color: white;
 	float: left;
 	display: none;
+	height: 70px;
+	width: 100px;
 }
 
 .nav_image {
@@ -134,7 +136,7 @@ ul {
 	padding-right: 10px;
 	margin-top: auto;
 	margin-left: -10px;
-}*/
+}
 
 .content {
 	background-color: black;
