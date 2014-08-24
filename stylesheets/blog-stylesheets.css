@@ -112,6 +112,8 @@ ul {
 	position: absolute;
 	left: 0px;
 	margin-left: 70px;
+	font-family: 'Lobster', cursive;
+	text-align: center;
 }
 
 .nav_image {
