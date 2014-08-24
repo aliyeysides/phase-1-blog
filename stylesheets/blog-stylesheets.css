@@ -109,7 +109,6 @@ ul {
 
 #left-nav-3:hover div.nav_text {
 	display: block;
-	clear: both;
 }
 
 .nav_text {
@@ -121,7 +120,7 @@ ul {
 	position: absolute;
 	left: 0px;
 	margin-left: 70px;
-	font-family: 'Lobster', cursive;
+	font-family: 'Lobster';
 	text-align: center;
 	font-size: 30px;
 	padding-top: 10px;
