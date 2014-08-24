@@ -82,9 +82,6 @@ ul {
 	color: white;
 }
 
-.left-nav {
-	box-shadow: outset 0px 30px 30px 15px white;
-}
 
 .left-nav {
 	text-decoration: none;
@@ -98,6 +95,17 @@ ul {
 	margin-top: auto;
 	float: left;
 	display: block;
+	box-shadow: outset 0px 30px 30px 15px white;
+}
+
+.left-nav:hover div.text {
+	display: block;
+}
+
+.text {
+	background-color: white;
+	float: left;
+	display: none;
 }
 
 
