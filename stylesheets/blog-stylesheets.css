@@ -104,6 +104,7 @@ ul {
 }
 
 .text {
+	color: red;
 	background-color: white;
 	float: left;
 	display: none;
