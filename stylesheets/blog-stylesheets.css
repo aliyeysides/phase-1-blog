@@ -169,7 +169,8 @@ ul {
 	padding-top: 20px;
 	padding-left: 80px;
 	padding-bottom: 20px;
-	opacity: 0.8;	
+	opacity: 0.8;
+	z-index: 1;	
 }
 
 h1{
