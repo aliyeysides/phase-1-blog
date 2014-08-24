@@ -130,6 +130,9 @@ ul {
     transition: all 0.5s linear;
 }
 
+.nav_image {
+	float: left;
+}
 
 #left-nav-2 {
 	position: relative;
