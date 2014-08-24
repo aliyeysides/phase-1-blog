@@ -109,6 +109,7 @@ ul {
 
 #left-nav-3:hover div.nav_text {
 	display: block;
+	clear: both;
 }
 
 .nav_text {
