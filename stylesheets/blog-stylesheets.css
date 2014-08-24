@@ -181,7 +181,7 @@ h2 {
 	color: white;
 }
 
-/*#relative_test {
+#relative_test {
 	position: relative;
 	width: 200px;
 	height: 100px;
@@ -195,4 +195,4 @@ h2 {
 	background-color: blue;
 	top: 5px;
 	left: 5px;
-}*/
+}
