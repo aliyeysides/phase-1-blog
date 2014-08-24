@@ -96,6 +96,7 @@ ul {
 	float: left;
 	display: block;
 	box-shadow: outset 0px 30px 30px 15px white;
+	clear: both;
 }
 
 .left-nav:hover div.text {
