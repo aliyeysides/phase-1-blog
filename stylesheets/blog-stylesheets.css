@@ -83,7 +83,7 @@ ul {
 }
 
 
-.left-nav {
+#left-nav {
 	text-decoration: none;
 	padding-right: 10px;
 	padding-top: 10px;
@@ -99,7 +99,7 @@ ul {
 	clear: both;
 }
 
-.nav_image:hover div.nav_text {
+#left-nav:hover div.nav_text {
 	display: block;
 }
 
@@ -134,7 +134,7 @@ ul {
 	padding-right: 10px;
 	margin-top: auto;
 	margin-left: -10px;
-}
+}*/
 
 .content {
 	background-color: black;
