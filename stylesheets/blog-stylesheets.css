@@ -101,17 +101,14 @@ ul {
 
 #left-nav:hover div.nav_text {
 	display: block;
-	font-family: 'Lobster', cursive;
 }
 
 #left-nav-2:hover div.nav_text {
 	display: block;
-	font-family: 'Lobster', cursive;
 }
 
 #left-nav-3:hover div.nav_text {
 	display: block;
-	font-family: 'Lobster', cursive;
 }
 
 .nav_text {
@@ -128,6 +125,7 @@ ul {
 	font-size: 30px;
 	padding-top: 10px;
 	clear: both;
+	clear: right;
 }
 
 .nav_image {
