@@ -99,7 +99,7 @@ ul {
 	clear: both;
 }
 
-.left-nav:hover div.nav_text {
+.nav_image:hover div.nav_text {
 	width: 400px;
     position: relative; 
     left:80px;
@@ -120,7 +120,7 @@ ul {
     opacity: 0;
     position: absolute;
 
-    background-color: rgba(0,0,0,0.6);
+    background-color: white;
     color: #f90;
     font-weight: bold;
     line-height: 1.1em;
