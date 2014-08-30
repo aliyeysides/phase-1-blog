@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+	<title>My Blog</title>
+	<div class="icons">
+		<a href="https://github.com/aliyeysides"><img src="/imgs/github_64.png"/></a>
+		<a href="http://www.quora.com/Ali-Yeysides-1"><img src="/imgs/quora_64.png"/></a>
+		<a href="https://plus.google.com/u/0/117458402151884611371/posts"><img src="/imgs/google-plus_64.png"/></a>
+		<a href="http://aliyeysides.github.io"><img src="https://secure.gravatar.com/avatar/4221b3afbf3f0d100a6bdd1455799b8a.png?r=PG&d=mm&s=98"/></a>
+		<a href="https://www.linkedin.com/nhome/?trk="><img src="/imgs/linkedin_64.png"/></a>
+		<a href="https://twitter.com/aliyeysides"><img src="/imgs/twitter_64.png"/></a>
+		<a href="https://www.facebook.com/ali.yeysides"><img src="/imgs/facebook_64.png"/></a>
+	</div>
+</head>
+
+<body>
+<div id="left-nav">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/about.html"><img src="http://icons.iconarchive.com/icons/michal-kowalkowski/metro-dating/64/How-About-We-icon.png"/></a></div>
+		<div class="nav_text">About Me</div>
+</div>
+
+<div id="left-nav-2">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/blog_index.html"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Web-RSS-Feed-Metro-icon.png"/></a></div>
+		<div class="nav_text">Blog</div>
+</div>
+
+<div id="left-nav-3">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/projects.html"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Apps-Steam-alt-Metro-icon.png"/></a></div>
+		<div class="nav_text">My Projects</div>
+</div>
+<div class="content">
+	<h1>Enumerable#Map/Select and it's Practices</h1>
+	<p>There are several ways to iterate over elements in Ruby and it's best to get to know which ones to use along with the proper practices. The following are two different methods that I use frequently to get the job done.</p>
+	<h2>Enumberable#Map</h2>
+	<p>
+	Map is probably the most common of the three because of it's simplicity and versitility. Map performs an action on each collection element, however, the original collection is not modified. This is what the destructive .map! is for. Below is an example of how map can be used.<br>
+	<br>
+	array = [1,2,3]<br>
+	<br>
+	array.map {|x| x += x}<br>
+	<br>
+	#=> [2,4,6]<br>
+	<br>
+	# But array still equals [1,2,3]<br>
+	<br>
+	In the following example, we have established an array that contains the elements 1,2,3. Then, we use the map method to iterate over each element that we have named x. We then pass a block of code to map and tell it that we want to add each x element with x, so what this will return is [2,4,6], but the original array will still be [1,2,3] if called upon. If we wanted to change the underlying array, we would use the .map! destructive method and the return would be [2,4,6] and so would the array if called on again.<br>
+	<br>
+
+	Let's try another example. This time we want to pass a block to the array and gather all the elements that equates to truthy values.<br>
+	<br>
+	array = [1,2,3]<br>
+	<br>
+	array.map {|x| x >= 2}<br>
+	<br>
+	#=> [false, true, true]<br>
+	<br>
+	Wait, what happened here? We iterated over all the elements of array and said we want x if it's greater than or equal to 2. Weren't we supposed to get [2,3] as a return? Well, no. Map gathers all elements to modify them. In this case, we are not modifying the elements of the array, we are simply saying we want only the elements that equate to true when passed. This is what .select is for.<br>
+	</p>
+	<h2>Enumerable#Select</h2>
+	<p>So let's take the previous example and try it with select:<br>
+	<br>
+	array = [1,2,3]<br>
+	<br>
+	array.select {|x| x >= 3}<br>
+	<br>
+	#=> [2,3]<br>
+	<br>
+	#=> array still equals [1,2,3]<br>
+	<br>
+	What select does is iterate over each element like we did with map, but returns a collection for which the given block, x >= 3, returns a true value. Just like map, this returns the new values but does not change the underlying collection.<br>
+	</p>
+</div>
+</body>
+
+
+
+</html>
