@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+	<title>My Blog</title>
+	<div class="icons">
+		<a href="https://github.com/aliyeysides"><img src="/imgs/github_64.png"/></a>
+		<a href="http://www.quora.com/Ali-Yeysides-1"><img src="/imgs/quora_64.png"/></a>
+		<a href="https://plus.google.com/u/0/117458402151884611371/posts"><img src="/imgs/google-plus_64.png"/></a>
+		<a href="http://aliyeysides.github.io"><img src="https://secure.gravatar.com/avatar/4221b3afbf3f0d100a6bdd1455799b8a.png?r=PG&d=mm&s=98"/></a>
+		<a href="https://www.linkedin.com/nhome/?trk="><img src="/imgs/linkedin_64.png"/></a>
+		<a href="https://twitter.com/aliyeysides"><img src="/imgs/twitter_64.png"/></a>
+		<a href="https://www.facebook.com/ali.yeysides"><img src="/imgs/facebook_64.png"/></a>
+	</div>
+</head>
+
+<body>
+<div id="left-nav">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/about.html"><img src="http://icons.iconarchive.com/icons/michal-kowalkowski/metro-dating/64/How-About-We-icon.png"/></a></div>
+		<div class="nav_text">About Me</div>
+</div>
+
+<div id="left-nav-2">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/blog_index.html"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Web-RSS-Feed-Metro-icon.png"/></a></div>
+		<div class="nav_text">Blog</div>
+</div>
+
+<div id="left-nav-3">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/projects.html"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Apps-Steam-alt-Metro-icon.png"/></a></div>
+		<div class="nav_text">My Projects</div>
+</div>
+<div class="content">
+	<h1>What are Ruby Classes?</h1>
+
+<p>Simply put, Classes are a Ruby construct that allows us to implement properties and inherit those properties by its instantiated objects. At the heart of Ruby, we have a lot of built-in classes that provide us with the initial set of tools that act as a starting point for the creation of our own classes and objects. In Ruby, everything is an object--including Classes--which means a typical class consists of a collection of method definitions, or properties, belonging to that particular class. When we create an instance of a class, that newly created object will inherit those properties the parent class contained.</p>
+
+<p>For our example, I’m creating a video game and I need a construct for the bad guys so I can create a bunch of them without having to code each one. After all, I already know they will all be similar; each will have strength, health, and I’m going to define another method that gives me his status. So, it’s a perfect time to use classes!</p>
+
+<p>class Badguy</p>
+
+<p>def initialize(strength, health)</p>
+<p>@strength = strength</p>
+<p>@health = health</p>
+<p>end</p>
+
+<p>def status(@strength, @health)</p>
+<p>“My strength is #{@strength} and my health is at #{@health}!”</p>
+<p>end</p>
+
+<p>end</p>
+
+<p>We then create an instance of a class using the built-in .new method:</p>
+
+<p>jake = Badguy.new(10, 100)</p>
+
+<p>#=> this jake object has a strength of 10 and health of 100 and belongs to the Badguy class.</p>
+
+<p>That’s it! We now have a new bad guy named jake. Don’t believe me? Well, simply check!</p>
+
+<p>jake.is_a?(Badguy)</p>
+
+<p>#=> True</p>
+
+<p>Now, let’s try to get jake to do his thing and tell us his status. We simply call on the method that the class he was instantiated from includes.</p>
+
+<p>jake.status</p>
+
+<p>#=> “My strength is 10 and my health is at 100!”</p>
+
+<p>Jake’s status method is actually called an instance method. That is because the method status was defined within the Badguy class and can only be used by objects instantiated by that class construct. If I tried to call this method on an object that was not apart of the Badguy class, I will receive a “method not defined” error.</p>
+
+<p>You might have also noticed a method I defined called initialize right from the beginning of the class with an assignment of the argument to a variable with a @ infront of it. Variables with @ in-front of them mean they are instance variables. Ruby objects come with their own storage and retrieval mechanism for values which enables individual objects to remember state. These instance variables are only visible to the object to which they belong. Also, instance variables initialized in one method inside a class can be used by any method defined within that class. That’s how we got to pass those instance variables created in one method of the class, initialize, into the other status method which then used that information to run it’s own tasks.</p>
+
+<p>The beauty of Ruby classes are flexible and versatile. For example, we can easily close and reopen any class at any time to alter its properties. I could open the Badguy class again, in a different location, and add or overwrite its methods.</p>
+
+<p>Another cool feature is the ability to make the methods within the class private. By simply adding the special keyword private to our class makes ALL METHODS BELOW it un-callable from outside of the class. So for example, if I put private above the status method in our previous example, I would be unable to call that status method on any objects, even if they were instantiated from that class.</p>
+
+<p>Classes are a powerful construct to model objects and share their properties and data by allowing its instances to inherit their properties. This is an excellent way to create a batch of objects that all share a common ancestry and have similar capabilities.</p>
+<p><span id="description">posted Sep. 5th, 2014</span></p>
+</div>
+</body>
+
+
+
+</html>
