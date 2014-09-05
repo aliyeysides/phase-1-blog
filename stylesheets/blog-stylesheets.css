@@ -199,11 +199,17 @@ h2 {
 }
 
 #technical {
+	display: inline-block;
 	width: 45%;
 	height: auto;
+	font: white;
+	float: left;
+	background-color: yellow;
 }
 
 #cultural {
+	display: inline-block;
+	font: white;
 	width: 45%;
 	height: auto;
 	background-color: green;
