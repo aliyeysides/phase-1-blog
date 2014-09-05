@@ -36,7 +36,7 @@ a:hover {
 }
 
 p {
-	color: white;
+	color: black;
 }
 
 #about_pic {
@@ -156,7 +156,7 @@ ul {
 }
 
 .content {
-	background-color: black;
+	background-color: white;
 	position: relative;
 	left: 100px;
 	top: 30px;
