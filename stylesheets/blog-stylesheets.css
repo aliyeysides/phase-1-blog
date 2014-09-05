@@ -168,7 +168,7 @@ ul {
 	padding-right: 80px;
 	padding-top: 20px;
 	padding-left: 80px;
-	padding-bottom: auto;
+	padding-bottom: 40px;
 	opacity: 0.9;
 	z-index: 1;	
 	border: solid 3px white;
@@ -209,6 +209,7 @@ h2 {
 	height: auto;
 	font: white;
 	float: left;
+	padding-bottom: 40px;
 }
 
 #cultural {
@@ -219,14 +220,13 @@ h2 {
 	font: white;
 	width: 45%;
 	height: auto;
+	padding-bottom: 40px;
 }
 
 #technical li {
-	position: absolute;
 	margin: 1em 0;
 }
 
 #cultural li {
-	position: absolute;
 	margin: 1em 0;
 }
