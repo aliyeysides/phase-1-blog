@@ -222,9 +222,11 @@ h2 {
 }
 
 #technical li {
+	position: absolute;
 	margin: 1em 0;
 }
 
 #cultural li {
+	position: absolute;
 	margin: 1em 0;
 }
