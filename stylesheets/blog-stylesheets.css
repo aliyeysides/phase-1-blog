@@ -199,6 +199,9 @@ h2 {
 }
 
 #technical {
+	position: absolute;
+	right: 0px;
+	top: 0px;
 	display: block;
 	width: 45%;
 	height: auto;
@@ -208,6 +211,9 @@ h2 {
 }
 
 #cultural {
+	position: absolute;
+	left: 0px;
+	top: 0px;
 	display: block;
 	font: white;
 	width: 45%;
