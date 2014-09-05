@@ -210,7 +210,7 @@ h2 {
 	height: auto;
 	font: white;
 	padding-bottom: 40px;
-	margin-left: 20px;
+	margin-left: 50%;
 }
 
 #cultural {
@@ -223,7 +223,7 @@ h2 {
 	width: 45%;
 	height: auto;
 	padding-bottom: 40px;
-	margin-right: 20px;
+	margin-right: 50%;
 }
 
 #technical li {
