@@ -209,9 +209,11 @@ h2 {
 	height: auto;
 	font: white;
 	padding-bottom: 40px;
+	margin-left: 20px;
 }
 
 #cultural {
+	float: left;
 	position: absolute;
 	left: 80px;
 	top: 20px;
@@ -220,6 +222,7 @@ h2 {
 	width: 45%;
 	height: auto;
 	padding-bottom: 40px;
+	margin-right: 20px;
 }
 
 #technical li {
