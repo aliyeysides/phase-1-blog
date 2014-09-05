@@ -200,8 +200,8 @@ h2 {
 
 #technical {
 	position: absolute;
-	right: 0px;
-	top: 0px;
+	right: 20px;
+	top: 20px;
 	display: block;
 	width: 45%;
 	height: auto;
@@ -212,8 +212,8 @@ h2 {
 
 #cultural {
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 20px;
+	top: 20px;
 	display: block;
 	font: white;
 	width: 45%;
