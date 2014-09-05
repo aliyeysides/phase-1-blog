@@ -36,8 +36,8 @@ a:hover {
 }
 
 p {
-	color: white;
-}
+	color: whiteb;
+}b
 
 #about_pic {
 	position: absolute;
@@ -171,6 +171,7 @@ ul {
 	padding-bottom: 20px;
 	opacity: 0.9;
 	z-index: 1;	
+	border: solid 3px white;
 }
 
 h1{
