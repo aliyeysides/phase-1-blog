@@ -197,3 +197,13 @@ h2 {
 	top: 5px;
 	left: 5px;
 }
+
+#technical {
+	width: 45%;
+	height: auto;
+}
+
+#cultural {
+	width: 45%;
+	height: auto;
+}
