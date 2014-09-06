@@ -211,6 +211,7 @@ h2 {
 	font: white;
 	padding-bottom: auto;
 	margin-left: 50%;
+	overflow: auto;
 }
 
 #cultural {
@@ -223,6 +224,7 @@ h2 {
 	height: auto;
 	padding-bottom: auto;
 	margin-right: 50%;
+	overflow: auto;
 }
 
 #technical li {
