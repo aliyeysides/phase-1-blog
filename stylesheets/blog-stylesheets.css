@@ -173,7 +173,6 @@ ul {
 	z-index: 1;	
 	border: solid 3px white;
 	height: auto;
-	overflow: hidden;
 }
 
 h1{
@@ -213,7 +212,6 @@ h2 {
 	padding-bottom: auto;
 	margin-left: 45%;
 	padding-right: 20px;
-/*	overflow: auto;*/
 }
 
 #cultural {
@@ -226,15 +224,12 @@ h2 {
 	height: auto;
 	padding-bottom: auto;
 	margin-right: 45%;
-/*	overflow: auto;*/
 }
 
 #technical li {
 	margin: 1em 0;
-	overflow: auto;
 }
 
 #cultural li {
 	margin: 1em 0;
-	overflow: auto;
 }
