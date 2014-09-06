@@ -37,7 +37,7 @@ a:hover {
 
 p {
 	color: white;
-}b
+}
 
 #about_pic {
 	position: absolute;
@@ -204,8 +204,8 @@ h2 {
 
 #technical {
 	position: absolute;
-	right: 20px;
-	top: 20px;
+/*	right: 20px;
+	top: 20px;*/
 	display: inline-block;
 	width: 45%;
 	height: auto;
@@ -217,8 +217,8 @@ h2 {
 
 #cultural {
 	position: absolute;
-	left: 80px;
-	top: 20px;
+/*	left: 80px;
+	top: 20px;*/
 	display: inline-block;
 	font: white;
 	width: 45%;
