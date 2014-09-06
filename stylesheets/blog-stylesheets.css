@@ -173,7 +173,7 @@ ul {
 	z-index: 1;	
 	border: solid 3px white;
 	height: auto;
-/*	overflow: auto;*/
+	overflow: hidden;
 }
 
 h1{
@@ -230,13 +230,11 @@ h2 {
 }
 
 #technical li {
-	white-space: pre-line;
-/*	margin: 1em 0;*/
+	margin: 1em 0;
 	overflow: auto;
 }
 
 #cultural li {
-	white-space: pre-line;
-/*	margin: 1em 0;*/
+	margin: 1em 0;
 	overflow: auto;
 }
