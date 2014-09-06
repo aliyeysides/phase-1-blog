@@ -173,6 +173,7 @@ ul {
 	z-index: 1;	
 	border: solid 3px white;
 	height: auto;
+	overflow: auto;
 }
 
 h1{
