@@ -230,11 +230,13 @@ h2 {
 }
 
 #technical li {
-	margin: 1em 0;
+	white-space: pre-line;
+/*	margin: 1em 0;*/
 	overflow: auto;
 }
 
 #cultural li {
-	margin: 1em 0;
+	white-space: pre-line;
+/*	margin: 1em 0;*/
 	overflow: auto;
 }
