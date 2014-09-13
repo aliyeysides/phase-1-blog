@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+	<link href="prettify.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="prettify.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+	<title>My Blog</title>
+	<div class="icons">
+		<a href="https://github.com/aliyeysides"><img src="/imgs/github_64.png"/></a>
+		<a href="http://www.quora.com/Ali-Yeysides-1"><img src="/imgs/quora_64.png"/></a>
+		<a href="https://plus.google.com/u/0/117458402151884611371/posts"><img src="/imgs/google-plus_64.png"/></a>
+		<a href="http://aliyeysides.github.io"><img src="https://secure.gravatar.com/avatar/4221b3afbf3f0d100a6bdd1455799b8a.png?r=PG&d=mm&s=98"/></a>
+		<a href="https://www.linkedin.com/nhome/?trk="><img src="/imgs/linkedin_64.png"/></a>
+		<a href="https://twitter.com/aliyeysides"><img src="/imgs/twitter_64.png"/></a>
+		<a href="https://www.facebook.com/ali.yeysides"><img src="/imgs/facebook_64.png"/></a>
+	</div>
+</head>
+
+<body>
+<div id="left-nav">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/about.html"><img src="http://icons.iconarchive.com/icons/michal-kowalkowski/metro-dating/64/How-About-We-icon.png"/></a></div>
+		<div class="nav_text">About Me</div>
+</div>
+
+<div id="left-nav-2">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/blog_index.html"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Web-RSS-Feed-Metro-icon.png"/></a></div>
+		<div class="nav_text">Blog</div>
+</div>
+
+<div id="left-nav-3">
+		<div class="nav_image"><a href="http://aliyeysides.github.io/projects.html"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Apps-Steam-alt-Metro-icon.png"/></a></div>
+		<div class="nav_text">My Projects</div>
+</div>
+<div class="content">
+	<h1>Classes and Modules</h1>
+	<p>Classes and Modules go hand-in-hand and are a big part of the Ruby language. Classes are basically a Ruby construct that allows us to implement properties and inherit those properties by its instantiated objects. Read more about Ruby classes here: 123242335235. Another great use of classes in Ruby support the idea that the property of one class can be shared with another class using inheritance. However, sometimes we want to have two classes that are able to inherit from each other, not just one from a parent class. This is where modules come in. Modules are a collection of methods that a class can add to it’s collection using the include keyword followed by the module name.</p>
+
+	<p>I recently encountered the need for modules during this week’s solo challenge for DBC. The idea was to create a playlist that had two classes: song and playlist. The challenge’s tests were requiring a pass on a song#play method but also a playlist#play_all method. I wanted to use the play method I built for the song class for each song in the playlist, after all--every playlist is composed of more than one song. However, I had defined the play method for the song class and I could not call that method on an object that hadn’t been instantiated by the song class. So here’s what I did:</p>
+
+	<img src="">
+
+	<pre class="prettyprint">
+		class Song
+	def initialize(song, artist)
+		@song = song
+		@artist = artist
+	end
+
+	def play
+		p "Now playing #{@song} by #{@artist}..."
+	end
+	end
+	</pre>
+
+	<p>But, there’s another way using modules:</p>
+
+	<p><span id="description">posted Sep. 5th, 2014</span></p>
+</div>
+</body>
+
+
+
+</html>
