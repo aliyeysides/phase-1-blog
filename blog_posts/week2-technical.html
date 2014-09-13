@@ -4,6 +4,9 @@
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sons-of-obsidian"></script>
+	<link href="prettify.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="prettify.js"></script>
 	<title>My Blog</title>
 	<div class="icons">
 		<a href="https://github.com/aliyeysides"><img src="/imgs/github_64.png"/></a>
@@ -41,6 +44,23 @@
 	<br>
 	Another feature of the relative positioning is that it can be used on a parent element and serve as a reference point for any child elements that have absolute positioning applied to them. For example:</p> 
 	<div id="relative_test"><div id="absolute_test"></div></div>
+	<pre class="prettyprint linenums">
+
+	#relative_test {
+		position: relative;
+		width: 200px;
+		height: 100px;
+		background-color: red;
+	}
+
+	#absolute_test {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background-color: blue;
+		top: 5px;
+		left: 5px;
+	}</pre>
 	<p>Above, I've went ahead and created two divs. The RED div is the parent div and the BLUE div is the child of the RED parent. The RED div has the relative positioning attribute while the BLUE has absolute. Now, since the child is absolute, it looks to the relative parent for reference when making positioning changes. So, when I gave the BLUE div a top 5px; and a left: 5px; it moved relative to it's parent. Get it? Any element that is a child of the relatively positioned element can be absolutely positioned within that block.</p>
 	<h2><strong>Absolute</strong></h2>
 	<p>When <strong>absolute</strong> positioning is applied to an element that has no parent, by default it assumes positioning relative to the entire html page. This is useful again because we can move it around anywhere we wish with the top, right, bottom, left attributes, however unlike relative positioning, absolute positioning removes itself from the flow of elements on the page. What this means is that other elements will act as if that absolute element is not there, and will change accordingly. So be careful when using this feature.</p>git g
