@@ -54,7 +54,7 @@
 		end
 	end
 
-	class Playlist < Song
+	class Playlist < Song # Here I use the < to say Class#Song is the parent of Class#Playlist
 		def initialize(*song)
 			@playlist = [*song]
 		end

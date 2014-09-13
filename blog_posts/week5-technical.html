@@ -4,6 +4,10 @@
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sons-of-obsidian"></script>
+	<link href="prettify.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="prettify.js"></script>
+
 	<title>My Blog</title>
 	<div class="icons">
 		<a href="https://github.com/aliyeysides"><img src="/imgs/github_64.png"/></a>
@@ -38,36 +42,43 @@
 
 <p>For our example, I’m creating a video game and I need a construct for the bad guys so I can create a bunch of them without having to code each one. After all, I already know they will all be similar; each will have strength, health, and I’m going to define another method that gives me his status. So, it’s a perfect time to use classes!</p>
 
-<code><p>class Badguy</p>
+<pre class="prettyprint linenums">
+class Badguy
 
-<p>def initialize(strength, health)</p>
-<p>@strength = strength</p>
-<p>@health = health</p>
-<p>end</p>
+	def initialize(strength, health)
+		@strength = strength
+		@health = health
+	end
 
-<p>def status(@strength, @health)</p>
-<p>“My strength is #{@strength} and my health is at #{@health}!”</p>
-<p>end</p>
-
-<p>end</p></code>
+	def status(@strength, @health)
+		“My strength is #{@strength} and my health is at #{@health}!”
+	end
+end
+</pre>
 
 <p>We then create an instance of a class using the built-in .new method:</p>
 
-<code><p>jake = Badguy.new(10, 100)</p>
+<pre class="prettyprint linenums">
+jake = Badguy.new(10, 100)
 
-<p>#=> this jake object has a strength of 10 and health of 100 and belongs to the Badguy class.</p></code>
+#=> this jake object has a strength of 10 and health of 100 and belongs to the Badguy class.
+</pre>
 
-<p>That’s it! We now have a new bad guy named jake. Don’t believe me? Well, simply check!</p>
+<p>That’s it! We now have a new bad guy named jake. Don’t believe me? Well, let's check!</p>
 
-<code><p>jake.is_a?(Badguy)</p>
+<pre class="prettyprint linenums">
+jake.is_a?(Badguy)
 
-<p>#=> True</p></code>
+#=> True
+</pre>
 
 <p>Now, let’s try to get jake to do his thing and tell us his status. We simply call on the method that the class he was instantiated from includes.</p>
 
-<code><p>jake.status</p>
+<pre class="prettyprint linenums">
+jake.status
 
-<p>#=> “My strength is 10 and my health is at 100!”</p></code>
+#=> “My strength is 10 and my health is at 100!”
+</pre>
 
 <p>Jake’s status method is actually called an instance method. That is because the method status was defined within the Badguy class and can only be used by objects instantiated by that class construct. If I tried to call this method on an object that was not apart of the Badguy class, I will receive a “method not defined” error.</p>
 
