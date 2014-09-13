@@ -4,9 +4,10 @@
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
-	<link href="prettify.css" type="text/css" rel="stylesheet" />
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sons-of-obsidian"></script>
+	<link href="prettify.css" type="text/css" rel="stylesheet"/>
 	<script type="text/javascript" src="prettify.js"></script>
-	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
 
 	<title>My Blog</title>
 	<div class="icons">
@@ -41,8 +42,6 @@
 
 	<p>I recently encountered the need for modules during this week’s solo challenge for DBC. The idea was to create a playlist that had two classes: song and playlist. The challenge’s tests were requiring a pass on a song#play method but also a playlist#play_all method. I wanted to use the play method I built for the song class for each song in the playlist, after all--every playlist is composed of more than one song. However, I had defined the play method for the song class and I could not call that method on an object that hadn’t been instantiated by the song class. So here’s what I did:</p>
 
-	<img src="">
-
 	<pre class="prettyprint">
 		class Song
 	def initialize(song, artist)
@@ -54,9 +53,37 @@
 		p "Now playing #{@song} by #{@artist}..."
 	end
 	end
+
+	class Playlist < Song
+	def initialize(*song)
+		@playlist = [*song]
+	end
+
+	def add(*song)
+		@playlist.push(*song)
+	end
+
+	def remove(*song)
+		@playlist.delete(*song) 
+	end
+
+	def includes?(song)
+		@playlist.include?(song)
+	end
+
+	def play_all
+		@playlist.each {|x| x.play}
+	end
+
+	def num_of_tracks
+		@playlist.count
+	end
+	end
 	</pre>
 
 	<p>But, there’s another way using modules:</p>
+
+
 
 	<p><span id="description">posted Sep. 5th, 2014</span></p>
 </div>
