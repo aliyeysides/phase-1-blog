@@ -53,21 +53,21 @@ html, body,
 }
  
 #fbsection1 {
-    background-image: url(../images/1.jpg);
+    background-image: url(imgs/sunset.jpg);
 }
  
 #fbsection2 {
-    background-image: url(../images/2.jpg);
+    background-image: url(imgs/library.jpg);
 }
  
 #fbsection3 {
-    background-image: url(../images/3.jpg);
+    background-image: url(imgs/nyc.jpg);
 }
  
 #fbsection4 {
-    background-image: url(../images/4.jpg);
+    background-image: url(imgs/wheat.jpg);
 }
  
 #fbsection5 {
-    background-image: url(../images/5.jpg);
+    background-image: url(imgs/forest.jpg);
 }
