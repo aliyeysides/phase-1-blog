@@ -54,27 +54,27 @@ html, body,
  
 #fbsection1 {
     position: relative;
-    background-image: url(imgs/street.jpg);
+    background-image: url(../imgs/street.jpg);
 }
  
 #fbsection2 {
     position: relative;
-    background-image: url(imgs/library.jpg);
+    background-image: url(../imgs/library.jpg);
 }
  
 #fbsection3 {
     position: relative;
-    background-image: url(imgs/nyc.jpg);
+    background-image: url(../imgs/nyc.jpg);
 }
  
 #fbsection4 {
     position: relative;
-    background-image: url(imgs/wheat.jpg);
+    background-image: url(../imgs/wheat.jpg);
 }
  
 #fbsection5 {
     position: relative;
-    background-image: url(imgs/forest.jpg);
+    background-image: url(../imgs/forest.jpg);
 }
 
 #intro {
