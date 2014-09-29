@@ -1,236 +1,242 @@
-body {
-	background-image: url("/imgs/philly.jpg");
-	background-size: 100%;
-	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:center;
-	background-color: black;
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+    height: 100%; 
 }
-
-a:hover {
-	box-shadow: inset 0 0 30px 15px white;
+ 
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+    position: fixed;
+    z-index: 9999;
+    right: 100px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-
-
-#ali {
-	position: relative;
-	top: 42px;
-	left: 20px;
-	background-color: black;
-	padding-left: 20px;
-	padding-right: 30px;
-	/*box-shadow: outset 0 0 30px 15px white;*/
+ 
+.cbp-fbscroller > nav a {
+    display: block;
+    position: relative;
+    color: transparent;
+    height: 50px;
 }
-
-#yeysides {
-	position: relative;
-	bottom: 42px;
-	background-color: black;
-	padding-left: 25px;
-	padding-right: 30px;
-	padding-bottom: 15px;
-	/*box-shadow: outset 0 0 30px 15px white;*/
+ 
+.cbp-fbscroller > nav a:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 4px solid #fff;
 }
-
-p {
-	color: white;
+ 
+.cbp-fbscroller > nav a:hover:after {
+    background: rgba(255,255,255,0.6);
 }
-
-#about_pic {
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	display: inline-block;
-	float: left;
-	opacity: 1;
+ 
+.cbp-fbscroller > nav a.cbp-fbcurrent:after {
+    background: #fff;
+}
+ 
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ 
+#fbsection1 {
+    position: relative;
+    background-image: url(imgs/street.jpg);
+}
+ 
+#fbsection2 {
+    position: relative;
+    background-image: url(imgs/library.jpg);
+}
+ 
+#fbsection3 {
+    position: relative;
+    background-image: url(imgs/nyc.jpg);
+}
+ 
+#fbsection4 {
+    position: relative;
+    background-image: url(imgs/wheat.jpg);
+}
+ 
+#fbsection5 {
+    position: relative;
+    background-image: url(imgs/forest.jpg);
 }
 
 #intro {
-	font-family: 'Lobster', cursive;
-	text-align: center;
-	max-width: 120px;
-	color: white;
-	/*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
-	font-size: 60px;
-	opacity: 1;
-	padding-left: 20px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    max-width: 120px;
+    color: white;
+    /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
+    font-size: 60px;
+    opacity: 1;
+    padding-left: 20px;
+    position: relative;
+    bottom: 0px;
 }
 
-.icons {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+.navbar {
+    background-color: black;
+    width: 99%;
+    height: 75px;
+    top: 0px;
+    position: fixed;
+    z-index: 99;
+    border-color: orange;
+    border-bottom-style: solid;
 }
 
-#description {
-	font-size: 12px;
+li {
+    display: inline;
+    font-family: 'League Gothic','Bebas Neue','Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-color: white;
+    text-decoration: none;
+    margin: 5px, 5px, 20px, 5px;
+}
+
+a {
+    color: white;
+    margin-left: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    font-color: white;
+}
+
+a:link:hover {
+    font-color: orange;
+}
+
+a:visited {
+    font-color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-size: 24px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-color: white;
+    text-decoration: none;
+}
+
+#logo {
+    position: relative;
+    float: left;
+    font-weight: bolder;
+    height: 70px;
+    width: 400px;
+    margin-left: 20px;
+    font-color: orange;
+    font-size: 24px;
+}
+
+#logo h1 a {
+    color: orange;
+    position: absolute;
+    top: 5px;
+    margin: auto;
+    font-family: 'Cinzel', cursive;
+}
+
+.title {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Limelight', cursive;
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    background-color: orange;
+    color: white;
+    bottom: -50px;
+    left: 0px;
+    border: black, 1px;
 }
 
 #title {
-	font-size: 24px;
-	color: white;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    border: black, 1px;
+    font-family: 'Limelight', cursive;
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    background-color: orange;
+    color: white;
+    bottom: 0px;
+    left: 0px;
 }
 
-ul {
-	text-decoration: none;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	color: white;
+#about-content {
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    width: 1150px;
+    height: 180px;
+    right: 25px;
+    top: 90px;
 }
 
-
-#left-nav {
-	text-decoration: none;
-	padding-right: 10px;
-	padding-top: 10px;
-	position: relative;
-	top: 20px;
-	width: 70px;
-	height: auto;
-	margin-left: -10px;
-	margin-top: auto;
-	float: left;
-	display: block;
-	box-shadow: outset 0px 30px 30px 15px white;
-	clear: both;
+#dbc-content {
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    width: 1150px;
+    height: 160px;
+    margin-left: 50px;
+    margin-right: 50px;
+    top: 85px;
 }
 
-#left-nav:hover div.nav_text {
-	display: block;
+#me {
+    position: absolute;
+    top: 90px;
+    left: 15px;
+    width: 10%;
+    height: 20%;
 }
 
-#left-nav-2:hover div.nav_text {
-	display: block;
+p {
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#left-nav-3:hover div.nav_text {
-	display: block;
-}
-
-.nav_text {
-	background-color: white;
-	float: left;
-	display: none;
-	height: 55px;
-	width: 150px;
-	position: absolute;
-	left: 0px;
-	margin-left: 70px;
-	font-family: 'Lobster', cursive;
-	text-align: center;
-	font-size: 30px;
-	padding-top: 10px;
-	clear: both;
-	z-index: 99;
-}
-
-.nav_image {
-	float: left;
-}
-
-#left-nav-2 {
-	position: relative;
-	top: 20px;
-	display: block;
-	float: left;
-	clear: both;
-	padding-right: 10px;
-	margin-top: auto;
-	margin-left: -10px;
-
-}
-
-#left-nav-3 {
-	position: relative;
-	top: 20px;
-	display: block;
-	float: left;
-	clear: both;
-	padding-right: 10px;
-	margin-top: auto;
-	margin-left: -10px;
-}
-
-.content {
-	background-color: black;
-	position: relative;
-	left: 100px;
-	top: 30px;
-	width: auto;
-	min-height: 200px;
-	/*min-width: 1000px;*/
-	margin-right: 125px;
-	margin-bottom: auto;
-	padding-right: 80px;
-	padding-top: 20px;
-	padding-left: 80px;
-	padding-bottom: 40px;
-	opacity: 0.9;
-	z-index: 1;	
-	border: solid 3px white;
-	height: auto;
-	overflow: auto;
-}
-
-h1{
-	color: white;
-	font-family: 'Lobster', cursive;
-}
-
-h2 {
-	color: white;
-	font-family: 'Lobster', cursive;
-}
-
-#relative_test {
-	position: relative;
-	width: 200px;
-	height: 100px;
-	background-color: red;
-}
-
-#absolute_test {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	background-color: blue;
-	top: 5px;
-	left: 5px;
-}
-
-#technical {
-	position: absolute;
-/*	right: 20px;
-	top: 20px;*/
-	display: inline-block;
-/*	width: 45%;*/
-	height: auto;
-	font: white;
-	padding-bottom: auto;
-	margin-left: 45%;
-	padding-right: 20px;
-}
-
-#cultural {
-	position: absolute;
-/*	left: 80px;
-	top: 20px;*/
-	display: inline-block;
-	font: white;
-/*	width: 45%;*/
-	height: auto;
-	padding-bottom: auto;
-	margin-right: 45%;
-}
-
-#technical li {
-	margin: 1em 0;
-}
-
-#cultural li {
-	margin: 1em 0;
+.icons {
+    position: absolute;
+    background-color: yellow;
+    top: 425px;
+    left: 50%;
 }
