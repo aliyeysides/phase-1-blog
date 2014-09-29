@@ -52,10 +52,11 @@
 
 	<pre class="prettyprint linenums">
 	def assert(actual, expected, message)
-	if actual == expected
-	puts message
-	else 
-	raise “Assertion Failed on #{message}”
+		if actual == expected
+			puts message
+		else 
+			raise “Assertion Failed on #{message}”
+		end
 	end
 
 	assert( foo , bar  , “flight test”)
