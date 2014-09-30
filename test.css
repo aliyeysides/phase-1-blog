@@ -96,7 +96,7 @@ html, body,
     top: 0px;
     position: fixed;
     z-index: 99;
-    border-color: orange;
+    border-color: #0099cc;
     border-bottom-style: solid;
 }
 
