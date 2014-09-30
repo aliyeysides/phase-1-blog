@@ -90,6 +90,7 @@ html, body,
 }
 
 .navbar {
+    position: relative;
     background-color: black;
     width: 99%;
     height: 75px;
