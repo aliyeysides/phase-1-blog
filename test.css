@@ -142,6 +142,9 @@ ul {
     bottom: -50px;
     left: 0px;
     border: black, 1px;
+    border-color: #0099cc;
+    border-bottom-style: solid;
+    border-top-style: solid;
 }
 
 #title {
@@ -158,6 +161,8 @@ ul {
     color: white;
     bottom: 0px;
     left: 0px;
+    border-color: #0099cc;
+    border-top-style: solid;
 }
 
 #about-content {
@@ -187,9 +192,10 @@ p {
 }
 
 .icons {
-    position: absolute;
+    position: fixed;
     top: 5px;
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
+    margin-bottom: 5px;
 }
