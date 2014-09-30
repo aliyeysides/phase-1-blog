@@ -56,7 +56,7 @@ html, body,
     position: relative;
     background-color: black;
     width: 99%;
-    height: 75px;
+    height: auto;
     top: 0px;
     position: fixed;
     z-index: 99;
