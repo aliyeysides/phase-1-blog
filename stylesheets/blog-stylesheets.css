@@ -55,6 +55,8 @@ html, body,
 #fbsection1 {
     position: relative;
     background-image: url(../imgs/street.jpg);
+    height: auto;
+    width: auto;
 }
  
 #fbsection2 {
