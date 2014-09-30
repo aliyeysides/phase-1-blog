@@ -153,12 +153,12 @@ ul {
     height: 70px;
     width: 400px;
     margin-left: 20px;
-    font-color: orange;
+    font-color: #DF0101;
     font-size: 24px;
 }
 
 #logo h1 a {
-    color: orange;
+    color: #DF0101;
     position: absolute;
     top: 5px;
     margin: auto;
