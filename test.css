@@ -62,11 +62,11 @@ html, body,
     background-image: url(../imgs/library.jpg);
 }
  
-#fbsection3 {
+/*#fbsection3 {
     position: relative;
     background-image: url(../imgs/coffee.jpg);
 }
- 
+ */
 #fbsection4 {
     position: relative;
     background-image: url(../imgs/wheat.jpg);
