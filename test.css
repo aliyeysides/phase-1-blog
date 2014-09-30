@@ -54,31 +54,30 @@ html, body,
  
 #fbsection1 {
     position: relative;
-    background-image: url(imgs/street.jpg);
+    background-image: url(../imgs/street.jpg);
 }
  
 #fbsection2 {
     position: relative;
-    background-image: url(imgs/library.jpg);
+    background-image: url(../imgs/library.jpg);
 }
  
 #fbsection3 {
     position: relative;
-    background-image: url(imgs/nyc.jpg);
+    background-image: url(../imgs/nyc.jpg);
 }
  
 #fbsection4 {
     position: relative;
-    background-image: url(imgs/wheat.jpg);
+    background-image: url(../imgs/wheat.jpg);
 }
  
 #fbsection5 {
     position: relative;
-    background-image: url(imgs/forest.jpg);
+    background-image: url(../imgs/forest.jpg);
 }
 
 #intro {
-    font-family: 'Lobster', cursive;
     text-align: center;
     max-width: 120px;
     color: white;
@@ -223,7 +222,9 @@ ul {
     top: 90px;
     left: 15px;
     width: 10%;
-    height: 20%;
+    height: 20%; 
+    width: 68;
+    height: 134;
 }
 
 p {
@@ -237,5 +238,5 @@ p {
 .icons {
     position: absolute;
     top: 425px;
-    left: 45%;
+    left: 32%;
 }
