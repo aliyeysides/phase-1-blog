@@ -190,7 +190,7 @@ p {
     display: inline-block;
 }
 
-.content {
+/*.content {
 	position: absolute;
 	display: inline-block;
     -moz-column-count: 2;
@@ -199,4 +199,4 @@ p {
     -webkit-column-gap: 20px;
     column-count: 2;
     column-gap: 20px;
-}
+}*/
