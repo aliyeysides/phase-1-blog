@@ -103,6 +103,7 @@ ul {
     font-size: 24px;
     font-color: white;
     text-decoration: none;
+    display: inline-block;
 }
 
 #logo {
@@ -183,7 +184,7 @@ p {
 }
 
 .icons {
-	position: absolute;
+	padding-right: 30px;
 	top: 10px;
 	float: right;
     display: inline-block;
