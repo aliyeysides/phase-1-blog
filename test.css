@@ -99,9 +99,6 @@ a:hover {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
     font-size: 24px;
     padding-right: 20px;
     padding-top: 20px;
@@ -123,6 +120,8 @@ ul {
 #logo h1 a {
     color: orange;
     position: absolute;
+    border-color: #FF6200;
+    border-style: solid;
     top: 5px;
     margin: auto;
     font-family: 'Cinzel', cursive;
@@ -175,12 +174,6 @@ ul {
     margin-left: auto;
     margin-right: auto;
     top: 100px;
-}
-
-#me {
-    position: absolute;
-    top: 90px;
-    left: 25px;
 }
 
 p {
