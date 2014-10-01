@@ -142,9 +142,9 @@ ul {
     bottom: -50px;
     left: 0px;
     border: black, 1px;
-    border-color: #0099cc;
+    border-color: orange;
     border-bottom-style: solid;
-    border-color: #0099cc;
+    border-color: orange;
     border-top-style: solid;
 }
 
@@ -162,7 +162,7 @@ ul {
     color: white;
     bottom: 0px;
     left: 0px;
-    border-color: #0099cc;
+    border-color: orange;
     border-top-style: solid;
 }
 
