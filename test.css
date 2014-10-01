@@ -206,6 +206,8 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
+	width: 40%;
+	height: auto;
 }
 
 .content-2 {
@@ -214,4 +216,6 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
+	width: 40%;
+	height: auto;
 }
