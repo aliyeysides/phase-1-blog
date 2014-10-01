@@ -206,7 +206,7 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
-	width: 40%;
+	width: 35%;
 	height: auto;
 	margin: 0 0 5px 0;
 	font-size: 24px;
@@ -215,11 +215,11 @@ p {
 .content-2 {
 	position: absolute;
 	top: 100px;
-	right: 20px;
+	right: 35px;
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
-	width: 40%;
+	width: 35%;
 	height: auto;
 	margin: 0 0 5px 0;
 	font-size: 24px;
