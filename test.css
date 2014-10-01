@@ -213,6 +213,7 @@ p {
 .content-2 {
 	position: absolute;
 	top: 100px;
+	right: 0px;
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
