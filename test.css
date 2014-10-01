@@ -97,7 +97,7 @@ a:hover {
 
 
 
-ul {
+.navbar ul {
     list-style-type: none;
 	float: right;
     font-size: 24px;
