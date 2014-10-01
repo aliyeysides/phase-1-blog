@@ -205,10 +205,10 @@ p {
 	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	display: pre-line;
-	width: 35%;
+	display: inline-block;
+	width: 40%;
 	height: auto;
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 0;
 	font-size: 24px;
 }
 
@@ -218,9 +218,9 @@ p {
 	right: 35px;
 	margin-left: auto;
 	margin-right: auto;
-	display: pre-line;
-	width: 35%;
+	display: inline-block;
+	width: 40%;
 	height: auto;
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 0;
 	font-size: 24px;
 }
