@@ -216,3 +216,18 @@ p {
 	border-color: red;
 	display: inline-block;
 }
+
+#bottom-welcome {
+	border-color: orange;
+	border-bottom-style: solid; 
+}
+
+#bottom-about {
+	border-color: orange;
+	border-bottom-style: solid;
+}
+
+#bottom-blog {
+	border-color: orange;
+	border-bottom-style: solid;
+}
