@@ -228,3 +228,12 @@ p {
 .content p {
 	color: black;
 }
+
+h1 {
+	font-family: 'Lobster', cursive; 
+	padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+}
