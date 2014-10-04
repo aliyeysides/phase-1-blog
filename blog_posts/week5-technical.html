@@ -2,39 +2,30 @@
 <html>
 
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
-	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sons-of-obsidian"></script>
-	<link href="prettify.css" type="text/css" rel="stylesheet"/>
-	<script type="text/javascript" src="prettify.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Limelight|Lobster|Cinzel' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css">
 
-	<title>My Blog</title>
-	<div class="icons">
-		<a href="https://github.com/aliyeysides"><img src="/imgs/github_64.png"/></a>
-		<a href="http://www.quora.com/Ali-Yeysides-1"><img src="/imgs/quora_64.png"/></a>
-		<a href="https://plus.google.com/u/0/117458402151884611371/posts"><img src="/imgs/google-plus_64.png"/></a>
-		<a href="http://aliyeysides.github.io"><img src="https://secure.gravatar.com/avatar/4221b3afbf3f0d100a6bdd1455799b8a.png?r=PG&d=mm&s=98"/></a>
-		<a href="https://www.linkedin.com/nhome/?trk="><img src="/imgs/linkedin_64.png"/></a>
-		<a href="https://twitter.com/aliyeysides"><img src="/imgs/twitter_64.png"/></a>
-		<a href="https://www.facebook.com/ali.yeysides"><img src="/imgs/facebook_64.png"/></a>
-	</div>
+
+
+    <title>Welcome to Ali's site :]</title>
+    <div class="navbar">
+        <div id="logo"><h1><a href="#fbsection1">Ali Yeysides</a></h1></div>
+        <section class="nav-inner">
+            <div class="icons">
+                <a href="https://github.com/aliyeysides"><img src="/imgs/Github-icon.png"/></a>
+                <a href="https://plus.google.com/u/0/117458402151884611371/posts"><img src="/imgs/Google-plus-icon.png"/></a>
+                <a href="https://www.linkedin.com/nhome/?trk="><img src="/imgs/Linkedin-icon.png"/></a>
+                <a href="https://twitter.com/aliyeysides"><img src="/imgs/Twitter-icon.png"/></a>
+                <a href="https://www.facebook.com/ali.yeysides"><img src="/imgs/Facebook-icon.png"/></a>
+            </div>
+        <ul>
+            <li><a href="#fbsection2">About</a></li>
+            <li><a href="#fbsection4">Blog</a></li>
+            <li><a href="#fbsection5">Projects</a></li>
+        </ul>
+        </section>
+    </div>
 </head>
-
-<body>
-<div id="left-nav">
-		<div class="nav_image"><a href="http://aliyeysides.github.io/about.html"><img src="http://icons.iconarchive.com/icons/michal-kowalkowski/metro-dating/64/How-About-We-icon.png"/></a></div>
-		<div class="nav_text">About Me</div>
-</div>
-
-<div id="left-nav-2">
-		<div class="nav_image"><a href="http://aliyeysides.github.io/blog_index.html"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Web-RSS-Feed-Metro-icon.png"/></a></div>
-		<div class="nav_text">Blog</div>
-</div>
-
-<div id="left-nav-3">
-		<div class="nav_image"><a href="http://aliyeysides.github.io/projects.html"><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/64/Apps-Steam-alt-Metro-icon.png"/></a></div>
-		<div class="nav_text">My Projects</div>
-</div>
 <div class="content">
 	<h1>What are Ruby Classes?</h1>
 
@@ -43,38 +34,38 @@
 <p>For our example, I’m creating a video game and I need a construct for the bad guys so I can create a bunch of them without having to code each one. After all, I already know they will all be similar; each will have strength, health, and I’m going to define another method that gives me his status. So, it’s a perfect time to use classes!</p>
 
 <pre class="prettyprint linenums">
-class Badguy
+	class Badguy
 
-	def initialize(strength, health)
-		@strength = strength
-		@health = health
-	end
+		def initialize(strength, health)
+			@strength = strength
+			@health = health
+		end
 
-	def status(@strength, @health)
-		"My strength is #{@strength} and my health is at #{@health}!”
+		def status(@strength, @health)
+			"My strength is #{@strength} and my health is at #{@health}!”
+		end
 	end
-end
 </pre>
 
 <p>We then create an instance of a class using the built-in .new method:</p>
 
 <pre class="prettyprint linenums">
-jake = Badguy.new(10, 100)
-#=> this jake object has a strength of 10 and health of 100 and belongs to the Badguy class.
+	jake = Badguy.new(10, 100)
+	#=> this jake object has a strength of 10 and health of 100 and belongs to the Badguy class.
 </pre>
 
 <p>That’s it! We now have a new bad guy named jake. Don’t believe me? Well, let's check!</p>
 
 <pre class="prettyprint linenums">
-jake.is_a?(Badguy)
-#=> True
+	jake.is_a?(Badguy)
+	#=> True
 </pre>
 
 <p>Now, let’s try to get jake to do his thing and tell us his status. We simply call on the method that the class he was instantiated from includes.</p>
 
 <pre class="prettyprint linenums">
-jake.status
-#=> “My strength is 10 and my health is at 100!”
+	jake.status
+	#=> “My strength is 10 and my health is at 100!”
 </pre>
 
 <p>Jake’s status method is actually called an instance method. That is because the method status was defined within the Badguy class and can only be used by objects instantiated by that class construct. If I tried to call this method on an object that was not apart of the Badguy class, I will receive a “method not defined” error.</p>
@@ -88,8 +79,5 @@ jake.status
 <p>Classes are a powerful construct to model objects and share their properties and data by allowing its instances to inherit their properties. This is an excellent way to create a batch of objects that all share a common ancestry and have similar capabilities. Read more about inheritance with <a href="http://aliyeysides.github.io/blog_posts/week6-technical.html">Ruby Modules</a>.</p>
 <p><span id="description">posted Sep. 5th, 2014</span></p>
 </div>
-</body>
-
-
 
 </html>
